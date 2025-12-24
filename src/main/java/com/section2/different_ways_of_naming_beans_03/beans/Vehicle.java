@@ -1,4 +1,4 @@
-package com.section2.creatingBeans.beans;
+package com.section2.different_ways_of_naming_beans_03.beans;
 
 public class Vehicle {
 

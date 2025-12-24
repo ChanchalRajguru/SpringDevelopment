@@ -1,7 +1,7 @@
-package com.section2.creatingBeans.main;
+package com.section2.creatingBeans_01.main;
 
-import com.section2.creatingBeans.beans.Vehicle;
-import com.section2.creatingBeans.config.ProjectConfig;
+import com.section2.creatingBeans_01.beans.Vehicle;
+import com.section2.creatingBeans_01.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Example1 {

@@ -1,8 +1,9 @@
-package com.section2.creatingBeans.config;
+package com.section2.primary_annotation_04.config;
 
-import com.section2.creatingBeans.beans.Vehicle;
+import com.section2.primary_annotation_04.beans.Vehicle;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 /* Spring @Configuration annotation is a part of the spring core framework.
 Spring @Configuration annotation indicates that the class has @Bean definition methods.
@@ -13,23 +14,24 @@ So Spring container can process the class and generate Spring Beans to be used i
 public class ProjectConfig {
     /*  @Bean annotation lets Spring know that it need to call this method when it initializes its context and adds the returned value to its context*/
     @Bean
-    Vehicle vehicle(){
+    Vehicle vehicle1(){
         var veh = new Vehicle();
         veh.setName("Audi 8");
         return veh;
     }
 
-    /*  The method names usually follow verb notation like sayHello() or printNumber().
-      But for methods which we will use to create beans, can use nouns as names.
-      This will be a good practice as the method names will become bean names as well in the context */
-
     @Bean
-    String hello(){
-        return "Hello World";
+    Vehicle vehicle2(){
+        var veh = new Vehicle();
+        veh.setName("Honda");
+        return veh;
     }
 
+    @Primary
     @Bean
-    Integer number(){
-        return 16;
+    Vehicle vehicle3(){
+        var veh = new Vehicle();
+        veh.setName("Ferrari");
+        return veh;
     }
 }
