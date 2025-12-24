@@ -20,6 +20,7 @@ public class ProjectConfig {
         return veh;
     }
 
+
     @Bean
     Vehicle vehicle2(){
         var veh = new Vehicle();
