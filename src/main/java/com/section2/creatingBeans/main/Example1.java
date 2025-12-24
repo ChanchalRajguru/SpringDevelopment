@@ -13,7 +13,7 @@ public class Example1 {
 
         /* The var keyword was introduced in Java 10.
         * Type inference is used in var keyword which automatically detects the datatype of a variable
-        * based on the surrounding context. */
+        * based on the surrounding context.. */
 
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
         Vehicle veh = context.getBean(Vehicle.class);
