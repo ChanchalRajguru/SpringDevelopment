@@ -5,6 +5,7 @@ import com.section2.post_construct_annotation_06.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Example6 {
+    /* TO-DO make notes on the 2 scenarios below */
 
     static void main(String[] args) {
 
