@@ -1,9 +1,8 @@
-package com.section3.wiringBeans_using_MethodCall.beans;
+package com.section3.wiringBeans_using_MethodParameters.beans;
 
 public class Vehicle {
-
     public Vehicle() {
-        System.out.println("Vehicle bean created by Spring!");
+        System.out.println("Vehicle bean created  by Spring!");
     }
 
     private String name;
@@ -18,12 +17,10 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return "Vehicle name - " + name;
+        return "Vehicle name = " + name;
     }
 
-    public void printHello() {
+    public void printHello(){
         System.out.println("Printing hello from Component Vehicle Bean");
     }
-
-
 }
