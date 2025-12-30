@@ -1,0 +1,26 @@
+package com.section3.wiringBeans_using_Autowired_on_setterMethod.beans;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Vehicle {
+
+    private String name = "Toyota";
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle name = " + name;
+    }
+    public void printHello(){
+        System.out.println(
+                "Printing Hello from Component Vehicle Bean");
+    }
+}
