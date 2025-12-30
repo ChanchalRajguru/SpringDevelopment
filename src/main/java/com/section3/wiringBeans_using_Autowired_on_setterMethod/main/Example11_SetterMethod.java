@@ -1,8 +1,8 @@
-package com.section3.wiringBeans_using_Autowired_on_setterMethod.beans.main;
+package com.section3.wiringBeans_using_Autowired_on_setterMethod.main;
 
 import com.section3.wiringBeans_using_Autowired_on_setterMethod.beans.Person;
 import com.section3.wiringBeans_using_Autowired_on_setterMethod.beans.Vehicle;
-import com.section3.wiringBeans_using_Autowired_on_setterMethod.beans.config.ProjectConfig;
+import com.section3.wiringBeans_using_Autowired_on_setterMethod.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Example11_SetterMethod {
