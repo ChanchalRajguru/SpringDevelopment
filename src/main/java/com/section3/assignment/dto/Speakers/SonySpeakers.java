@@ -8,6 +8,6 @@ public class SonySpeakers implements Speakers {
 
     @Override
     public String makeSound(){
-        return "Now playing from Sony Speakers";
+        return "Playing Music from Sony Speakers";
     }
 }
