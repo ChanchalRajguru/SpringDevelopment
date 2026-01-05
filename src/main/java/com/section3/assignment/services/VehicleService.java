@@ -10,20 +10,33 @@ import org.springframework.stereotype.Service;
 public class VehicleService {
 
     @Autowired
-    private Speakers speakers1;
+    private Speakers speakers;
+    private Tyres tyres;
+
+    public void playMusic(){
+        String music = speakers.makeSound();
+        System.out.println(music);
+    }
+
+    public void move(){
+        String status = tyres.rotate();
+        System.out.println(status);
+    }
+
+    public Speakers getSpeakers() {
+        return speakers;
+    }
+
+    public void setSpeakers(Speakers speakers) {
+        this.speakers = speakers;
+    }
+
+    public Tyres getTyres() {
+        return tyres;
+    }
 
     @Autowired
-    private Tyres tyres1;
-
-    public VehicleService(@Qualifier("BoseSpeakers") Speakers speakers, @Qualifier("BridgeStoneTyres") Tyres tyres) {
-        System.out.println("in VehicleService constructor");
-        this.speakers1 = speakers;
-        this.tyres1 = tyres;
+    public void setTyres(Tyres tyres) {
+        this.tyres = tyres;
     }
-
-    public void getAll() {
-        System.out.println("Vehicle is = " + speakers1.makeSound());
-        System.out.println("Vehicle is = " + tyres1.rotate());
-    }
-
 }

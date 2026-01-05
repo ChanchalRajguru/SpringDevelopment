@@ -5,12 +5,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Primary
 @Component
 public class BoseSpeakers implements Speakers {
 
     @Override
     public String makeSound() {
-        return "Now playing from Bose Speakers";
+        return "Playing Music from Bose Speakers";
     }
 }

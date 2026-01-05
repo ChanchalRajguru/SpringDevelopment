@@ -4,17 +4,20 @@ import com.section3.assignment.services.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component(value = "vehicleBean")
 public class Vehicle {
 
-    @Autowired
-    VehicleService service;
+    private String name = "Honda";
+    private final VehicleService service;
 
-    public void getSpeakersAndTyres(){
-        service.getAll();
+    @Autowired
+    public Vehicle(VehicleService service) {
+        this.service = service;
     }
 
-    private String name;
+    public void getSpeakersAndTyres() {
+        service.getAll();
+    }
 
     public String getName() {
         return name;

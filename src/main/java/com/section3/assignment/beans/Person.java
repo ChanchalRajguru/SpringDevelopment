@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component(value="personBean")
 public class Person {
 
     private String name = "Lucy";
@@ -12,8 +12,7 @@ public class Person {
     private final Vehicle vehicle;
 
     @Autowired
-    public Person(@Qualifier("vehicle3") Vehicle vehicle) {
-        System.out.println("person vehicle = " + vehicle);
+    public Person(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
 
