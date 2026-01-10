@@ -1,14 +1,12 @@
-package com.section3.assignment.services;
+package com.section3.assignment_solution.services;
 
-import com.section3.assignment.dao.Speakers;
-import com.section3.assignment.dao.Tyres;
+import com.section3.assignment_solution.interfaces.Speakers;
+import com.section3.assignment_solution.interfaces.Tyres;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
-public class VehicleService {
-
+@Component
+public class VehicleServices {
     @Autowired
     private Speakers speakers;
     private Tyres tyres;
@@ -18,7 +16,7 @@ public class VehicleService {
         System.out.println(music);
     }
 
-    public void move(){
+    public void moveVehicle(){
         String status = tyres.rotate();
         System.out.println(status);
     }

@@ -1,5 +1,6 @@
 package com.section3.circular_dependency.beans;
 
+import com.section3.assignment_solution.services.VehicleServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -27,5 +28,9 @@ public class Vehicle {
     @Override
     public String toString() {
         return "Vehicle name = " + name;
+    }
+
+    public VehicleServices getVehicleServices() {
+        return null;
     }
 }

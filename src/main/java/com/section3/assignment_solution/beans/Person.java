@@ -1,18 +1,15 @@
-package com.section3.assignment.beans;
+package com.section3.assignment_solution.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component(value="personBean")
+@Component(value = "personBean")
 public class Person {
-
     private String name = "Lucy";
-
     private final Vehicle vehicle;
 
     @Autowired
-    public Person(Vehicle vehicle) {
+    public Person(Vehicle vehicle){
         this.vehicle = vehicle;
     }
 
