@@ -1,6 +1,6 @@
-package com.section3.assignment.dto.Speakers;
+package com.section4.bean_scope.implementation;
 
-import com.section3.assignment.dao.Speakers;
+import com.section4.bean_scope.interfaces.Speakers;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
@@ -8,8 +8,7 @@ import org.springframework.stereotype.Component;
 @Primary
 public class SonySpeakers implements Speakers {
 
-    @Override
     public String makeSound(){
-        return "Playing Music from Sony Speakers.";
+        return "Playing music with Sony Speakers";
     }
 }
